@@ -10,3 +10,11 @@ git submodule add https://github.com/nghuyy/wts_helper.git
     })
     
 ```
+
+```JAVA
+WTS wts = WTS.init(()->{
+            //Event raised!
+            finish();
+        });
+mainBinding.imageViewScanQr.setImageBitmap(QR.createQR("https://wts.vnapps.com/event." + wts.getToken(),256));
+```
